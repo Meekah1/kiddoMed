@@ -2,6 +2,7 @@
 import { Box, Text } from '@chakra-ui/react'
 import ReuseableButton from './components/ReuseableButton';
 import WithSubnavigation from './components/NavBar';
+import ImageSlider from './components/ImageSlider';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       </ReuseableButton>
     </Box>
     <WithSubnavigation />
+    <ImageSlider />
     </>
   )
 }
