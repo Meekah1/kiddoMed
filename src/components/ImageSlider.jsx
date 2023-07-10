@@ -77,6 +77,7 @@ const ImageSlider = () => {
             </Box>
           </Flex>
         </VStack>
+         <Flex wrap=''>
         <Image
           src={picture}
           w={[300, 600, 900]}
@@ -87,6 +88,7 @@ const ImageSlider = () => {
           }}
           alt="approval Image"
         />
+        </Flex>
       </Flex>
     </Box>
   );
