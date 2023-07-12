@@ -6,10 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box, Image, Flex, VStack, Text } from "@chakra-ui/react";
 import boarding1 from "../assets/OnBoardingImg.png";
 import boarding from "../assets/OnBoardingImg1.png";
+import boarding2 from "../assets/OnBoardingImg2.png";
 import nafdac from "../assets/nafdac.png";
 import approve from "../assets/Approved.png";
 import tick from "../assets/tick.png";
-import picture from "../assets/pictures.png";
+import nutrition from "../assets/Nutrition.png";
+import consultation from "../assets/consultation.png";
+import help from "../assets/help.png";
+import pharmacy from "../assets/pharmacy.png";
 
 const ImageSlider = () => {
   const settings = {
@@ -18,30 +22,8 @@ const ImageSlider = () => {
     dots: true,
     // accessibility: true,
     slidesToScroll: 1,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     slidesToShow: 1,
-    appendDots: (dots) => (
-      <Box
-        position="absolute"
-        bottom="0"
-        width="100%"
-        display="flex"
-        justifyContent="start"
-        paddingLeft={[48, 80, 112]}
-        marginBottom="2rem" // Adjust as needed
-      >
-        <ul style={{ listStyle: "none", padding: "0", margin: "0" }}>{dots}</ul>
-      </Box>
-    ),
-    customPaging: () => (
-      <Box
-        width="1.5rem"
-        height="0.2rem"
-        backgroundColor="gray.400"
-        borderRadius="full"
-        marginLeft="0.5rem" // Adjust as needed
-      />
-    ),
   };
 
   return (
@@ -53,22 +35,25 @@ const ImageSlider = () => {
         <Box>
           <Image width={["100%"]} src={boarding} alt="onBoarding Image" />
         </Box>
+        <Box>
+          <Image width={["100%"]} src={boarding2} alt="onBoarding Image" />
+        </Box>
       </Slider>
-      <Flex m='30px auto auto auto' justifyContent='space-around'>
-        <VStack>
+      <Flex  mt={['20px', '30px']} align='center' justifyContent='space-around'>
+        <VStack w={[300, 400, 600]} h={[200, 300, 500]}>
           <Text
             fontWeight="bold"
-            fontSize={{ base: "16px", md: "24px", lg: "30px" }}
+            fontSize={{ base: "16px", md: "24px", lg: "28px" }}
             w={[180, 310]}
           >
             Quality Healthcare and Medicines At Your Doorsteps For Your Kids
           </Text>
-          <Text fontSize={{ base: "16px", md: "24px", lg: "30px" }} w={[180, 310]}>
+          <Text fontSize={{ base: "16px", md: "24px", lg: "28px" }} w={[180, 310]}>
             This page was medically revied and vetted by highly trained Doctors,
             Pharmacists, and relevant Healthcare bodies
           </Text>
-          <Flex align='center' justify='center'>
-            <Image src={nafdac} alt="Nafdac Image" />
+          <Flex align='center' justify='start' w={[200, 300]} >
+            <Image src={nafdac} alt="Nafdac Image" w={[40, 60, 100]} />
             <Box position="relative">
               <Image src={approve} alt="approval Image" />
               <Box position="absolute" top='-16px' left='18px'>
@@ -77,15 +62,25 @@ const ImageSlider = () => {
             </Box>
           </Flex>
         </VStack>
-         <Flex wrap=''>
+         <Flex w={[200, 400, 900]} h={[200, 300, 500]}  wrap='wrap' gap={8}>
         <Image
-          src={picture}
-          w={[300, 600, 900]}
-          height={{
-            base: "100%", // 0-48em
-            md: "50%", // 48em-80em,
-            xl: "27%", // 80em+
-          }}
+          src={nutrition}
+          w={[90, 130, 350]}
+          alt="approval Image"
+        />
+        <Image
+          src={pharmacy}
+          w={[90, 130, 350]}
+          alt="approval Image"
+        />
+        <Image
+          src={help}
+          w={[90, 130, 350]}
+          alt="approval Image"
+        />
+        <Image
+          src={consultation}
+          w={[90, 130, 350]}
           alt="approval Image"
         />
         </Flex>

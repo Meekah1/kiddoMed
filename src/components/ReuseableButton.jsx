@@ -6,7 +6,7 @@ import { Button } from '@chakra-ui/react'
 const ReuseableButton = ({ children }) => {
 
   return (
-    <Button bg='#0344EB' color='#ffffff' fontSize={['sm', 'md']} h='30px' borderRadius='20px' _hover={{
+    <Button bg='#4682B4' color='#ffffff' fontSize={['sm', 'md']} h='30px' borderRadius='20px' _hover={{
       background: "blue.400",
       color: "black.500",
     }} >
