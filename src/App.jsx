@@ -3,6 +3,8 @@ import { Box, Text } from '@chakra-ui/react'
 import ReuseableButton from './components/ReuseableButton';
 import WithSubnavigation from './components/NavBar';
 import ImageSlider from './components/ImageSlider';
+import Section1 from './components/Section1';
+import Section2 from './components/Section2';
 
 function App() {
   
@@ -18,6 +20,8 @@ function App() {
     </Box>
     <WithSubnavigation />
     <ImageSlider />
+    <Section1 />
+     <Section2 />
     </>
   )
 }
